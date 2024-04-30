@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Online Shop</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">about</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+     <section class=products>
+        <ul class=list1>
+
+            <li  class="lists"> 
+                <div class="mylist">
+                    <img src="https://www.three.co.uk/mobile-phones/brands/samsung/_jcr_content/root/container/container/primarycontainer_7078202/secondarycontainer/item2/image_copy_copy_copy.coreimg.png/1705492209018/samsung-s23-ultra-%401x.png">
+                    <button class="btn1"><span class="heart" onclick="setMyFavorite();"><i class="fa-solid fa-heart"></i></button></span></button>
+                </div>
+                <div class="mylist2">
+                    <h1 class="price" id="price">4399</h1>
+                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="counter">1</span>
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                    <input class="total" type="text" id="total" value="4399">
+                </div>
+                <i id="remove" class="fa-solid fa-trash"></i>
+            </li>
+
+            <hr>
+            <br>
+
+            <li class="lists"> 
+                <div class="mylist">
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708673189/Croma%20Assets/Communication/Mobiles/Images/300652_0_ncocr2.png">
+                    <button class="btn1"><span class="heart" onclick="setMyFavorite();"><i class="fa-solid fa-heart"></i></button></span></button>  
+                </div>
+                <div class="mylist2">
+                    <h1 class="price"  id="price">3299</h1>
+                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="counter">1</span>
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                    <input class="total" type="text" id="total" value="3299">
+                </div>
+                <i id="remove" class="fa-solid fa-trash"></i>
+            </li>
+            <hr>
+            <br>
+
+            <li class="lists">
+                <div class="mylist">
+                    <img src="https://www.tunisianet.com.tn/213879-large/smartphone-gamer-asus-rog-phone-3-5g-12-go-512-go-noir-.jpg">
+                    <button class="btn1"><span class="heart" onclick="setMyFavorite();"><i class="fa-solid fa-heart"></i></button></span></button> 
+                </div >
+                <div class=mylist2>
+                    <h1 class="price"  id="price">1999</h1>
+                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="counter">1</span>
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                    <input class="total" type="text" id="total" value="1999">
+                </div>
+                <i id="remove" class="fa-solid fa-trash"></i>
+            </li>
+            <hr>
+            <br>
+
+            <li class="lists"> 
+                
+                <div class="mylist">
+                    <img src="https://www.cdiscount.com/pdt2/3/3/9/1/700x700/vib5057551885339/rw/vibox-vi-12-pc-gamer-24-ecran-pack-amd-athlon.jpg">
+                    <button class="btn1"><span class="heart" onclick="setMyFavorite();"><i class="fa-solid fa-heart"></i></button></span></button>  
+                </div >
+                <div class=mylist2>
+                    <h1 class="price"  id="price">12295</h1>
+                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="counter">1</span>
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                    <input class="total" type="text" id="total" value="12295">
+                </div>
+                <i id="remove" class="fa-solid fa-trash"></i>
+            </li>
+            <hr>
+            <br>
+
+            <li class=lists> 
+                
+                <div class="mylist">
+                    <img src="https://media.materiel.net/categories/409.jpg">
+                    <button class="btn1"><span class="heart" onclick="setMyFavorite();"><i class="fa-solid fa-heart"></i></button></span></button>
+                </div >
+                <div class=mylist2>
+                    <h1 class="price"  id="price">5849</h1>
+                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="counter">1</span>
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                    <input class="total" type="text" id="total" value="5849">
+                </div>
+                <i id="remove" class="fa-solid fa-trash"></i>
+            </li>
+            <hr>
+            <br>
+
+            <li class=lists> 
+                <div class="mylist">
+                    <img src="https://mac.org.ua/wp-content/uploads/2023/06/WWDC_2023_2.jpeg">
+                    <button class="btn1"><span class="heart" onclick="setMyFavorite();"><i class="fa-solid fa-heart"></i></button></span></button>   
+                </div >
+                <div class=mylist2>
+                    <h1 class="price"  id="price">5629</h1>
+                    <button class="minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="counter">1</span>
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                    <input class="total" type="text" id="total" value="5629">
+                </div>
+                <i id="remove" class="fa-solid fa-trash"></i>
+            </li>
+        </ul>
+    </section>
+    <div class=main-footer >
+        <h1 class="tt">Total price</h1><br>
+        <input type="text" id="totalfin" value="33470">
+        <button onclick="myFunction()" class="btnfin">Buy</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Shopping Cart. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js" ></script>
+</body>
+</html>
